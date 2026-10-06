@@ -1,0 +1,52 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\\u5927\u5B78\\3\u4E0A\\\u6A5F\u96FB\u6574\u5408\\Lab3\\Task3_2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2E1B908B-E947-D2E8-C252-75A08381A9AD}|BluetoothApp\\BluetoothApp.csproj|d:\\\u5927\u5B78\\3\u4E0A\\\u6A5F\u96FB\u6574\u5408\\lab3\\task3_2\\bluetoothapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E1B908B-E947-D2E8-C252-75A08381A9AD}|BluetoothApp\\BluetoothApp.csproj|solutionrelative:bluetoothapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E1B908B-E947-D2E8-C252-75A08381A9AD}|BluetoothApp\\BluetoothApp.csproj|D:\\\u5927\u5B78\\3\u4E0A\\\u6A5F\u96FB\u6574\u5408\\Lab3\\Task3_2\\bluetoothapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2E1B908B-E947-D2E8-C252-75A08381A9AD}|BluetoothApp\\BluetoothApp.csproj|solutionrelative:bluetoothapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\\u5927\u5B78\\3\u4E0A\\\u6A5F\u96FB\u6574\u5408\\Lab3\\Task3_2\\BluetoothApp\\Form1.cs",
+              "RelativeDocumentMoniker": "BluetoothApp\\Form1.cs",
+              "ToolTip": "D:\\\u5927\u5B78\\3\u4E0A\\\u6A5F\u96FB\u6574\u5408\\Lab3\\Task3_2\\BluetoothApp\\Form1.cs",
+              "RelativeToolTip": "BluetoothApp\\Form1.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAYwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-01T02:55:17.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [\u8A2D\u8A08]",
+              "DocumentMoniker": "D:\\\u5927\u5B78\\3\u4E0A\\\u6A5F\u96FB\u6574\u5408\\Lab3\\Task3_2\\BluetoothApp\\Form1.cs",
+              "RelativeDocumentMoniker": "BluetoothApp\\Form1.cs",
+              "ToolTip": "D:\\\u5927\u5B78\\3\u4E0A\\\u6A5F\u96FB\u6574\u5408\\Lab3\\Task3_2\\BluetoothApp\\Form1.cs [\u8A2D\u8A08]",
+              "RelativeToolTip": "BluetoothApp\\Form1.cs [\u8A2D\u8A08]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-01T02:55:07.723Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="BluetoothApp/BluetoothApp.csproj" />
+  <Project Path="WinFormsApp1/WinFormsApp1.csproj" />
+  <Project Path="WinFormsApp2/WinFormsApp2.csproj" />
+</Solution>
