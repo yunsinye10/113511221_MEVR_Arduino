@@ -1,26 +1,32 @@
 **`Lab3/Task3-1/report.md`（完整示範報告）**
 
 ```markdown
-# 課題報告：Task 0-1 Hello World 序列埠輸出
+# 課題報告：Task 3-1 定時中斷與阻塞延遲之比較
 
-- **學生姓名**：[請填寫姓名]
-- **學生學號**：[請填寫學號]
-- **完成日期**：2026-XX-XX
+- **學生姓名**：[江翰霖]
+- **學生學號**：[113511221]
+- **報告日期**：2026-10-07
 
 ---
 
-### 1. 實驗目標(可參考課程投影片寫法)
-- 驗證 Arduino IDE 開發環境編譯與燒錄功能正常。
-- 掌握 `Serial.begin()` 與 `Serial.println()` 之使用方式。
-- 學習透過 Arduino IDE「序列埠監控器（Serial Monitor）」接收開發板訊息。
+### 1. 實驗目標
+- 掌握 TimerOne 函式庫與定時中斷之使用方式。
+- 比較定時中斷與 `delay()` 阻塞延遲對按鈕讀取及 LED 控制的影響。
+- 理解主程式等待時，中斷仍可定期處理輸入，並思考其在機器人控制上的應用。
 
 ### 2. 設備與元件
 - Arduino Uno 開發板 x 1
 - USB Type-B 傳輸線 x 1
-- 個人電腦（已安裝 Arduino IDE）x 1
+- 個人電腦（已安裝 Arduino IDE 與 TimerOne 函式庫）x 1
+- 按鈕 x 2
+- LED x 2
+- LED 限流電阻 x 2
+- 麵包板與杜邦線
 
 ### 3. 操作說明與成果
-1. **燒錄程式**：使用 USB 線連接 Arduino Uno 至電腦，開啟 `Task0-1.ino` 並點擊「上傳」。
-2. **開啟監控器**：開啟 Arduino IDE 的 Serial Monitor，將鮑率（Baud rate）設為 **9600 baud**。
-3. **實驗成果**：序列埠監控器成功每秒印出一次 `Hello World from Arduino!` 訊息。
-4. **操作影片**：請參閱同目錄下 `video/Task0-1.mp4` 之實際操作畫面。
+1. **連接電路**：按鈕A、B分別接至 D5、D6，另一端接GND；程式使用`INPUT_PULLUP`，因此未按下時為HIGH，按下時為LOW。LED A、B 的正極分別經限流電阻接至D3、D4，負極接GND。
+2. **燒錄程式**：使用USB線連接Arduino Uno至電腦，安裝TimerOne函式庫後，開啟並上傳`Task3_1_adv.ino`。
+3. **設定定時中斷**：程式以`Timer1.initialize(50000)`設定50,000us(50 ms)的週期，透過`Timer1.attachInterrupt(timer_led)`呼叫中斷函式。在中斷函式中讀取按鈕A，按下時LED A亮，放開時熄滅。
+4. **設定輪詢控制**：主程式在`loop()`中讀取按鈕B並控制LED B，最後執行`delay(1000)`，因此約每秒更新一次按鈕狀態。
+5. **結果說明**：按照程式設計，LED A 約每50 ms更新一次，即使主程式正在delay，仍可反映按鈕狀態；LED B則須等主程式下一次讀取才更新，短暫按下可能不會讀到。兩顆LED都是按照按鈕狀態亮滅，並非每按一次切換狀態。
+6. **操作影片**：請參閱同目錄下 `video/Task3-1.mp4` 之實際操作畫面。
